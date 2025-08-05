@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cricket Turf Booking</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+    <header class="hero">
+        <div class="overlay">
+            <h1>Welcome to PowerPlay Turf</h1>
+            <p>Book your slot, play your game.</p>
+            <a href="#booking" class="btn">Book Now</a>
+        </div>
+    </header>
+
+    <section class="about">
+        <h2>Why Choose Us?</h2>
+        <div class="features">
+            <div class="feature">
+                <h3>🏏 Premium Turf</h3>
+                <p>Well-maintained synthetic turf ideal for all age groups and match types.</p>
+            </div>
+            <div class="feature">
+                <h3>💡 Night Lights</h3>
+                <p>Play anytime with high-power floodlights for evening matches.</p>
+            </div>
+            <div class="feature">
+                <h3>📍 Prime Location</h3>
+                <p>Easy to reach, with ample parking and seating area for teams.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="booking" id="booking">
+        <h2>Book Your Slot</h2>
+        <form id="bookingForm" name="bookingForm">
+            <input type="text" name="name" placeholder="Full Name" required />
+            <input type="email" name="email" placeholder="Email Address" required />
+            <input type="tel" name="phone" placeholder="Phone Number" required />
+            <input type="date" name="date" required />
+            <input type="time" name="time" required />
+            <textarea name="message" placeholder="Any special requests?" rows="4"></textarea>
+            <button type="submit" class="btn">Submit Booking</button>
+        </form>
+    </section>
+
+    <section class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <img src="gallery1.jpg" alt="Turf View 1" />
+            <img src="gallery2.jpg" alt="Turf View 2" />
+            <img src="gallery3.jpg" alt="Turf View 3" />
+        </div>
+    </section>
+
+
+    <section class="map">
+        <h2>Find Us</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3912.180144199593!2d78.3848336147215!3d13.084622514781394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad59d6d3d4e011%3A0x3e4ff3e528c0e057!2sCricket%20Turf!5e0!3m2!1sen!2sin!4v1599919630386!5m2!1sen!2sin"
+            width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </section>
+
+    <footer>
+        <p>📞 Contact: +91 98765 43210 | 📧 turf@powerplay.com</p>
+        <p>&copy; 2025 PowerPlay Turf. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("tMIQMWlEFiskMT7U3"); // 👈 from https://dashboard.emailjs.com/admin/account
+        })();
+    </script>
+        <script src="script.js"></script>
+        <button id="backToTop" title="Back to Top">↑</button>
+
+
+
+
+</body>
+
+</html>
